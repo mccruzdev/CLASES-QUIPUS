@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Mi segunda clase - Eventos</title>
+        <style type="text/css">
+            div{
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+    </head>
+        
+    <body>
+        <h1>Clase 2 - Eventos</h1>
+
+        
+        <button name="boton"  onclick="hiceClick()" >Clickeame</button>
+        <div onmouseover="hiceClick()">
+
+        </div>
+        <input type="text" name="Nombre" id="idNombre"/>
+        <script type="text/javascript">
+            function hiceClick(){
+                alert("hice click")
+            }
+            var objeto = document.getElementById("idNombre");
+            console.log(objeto);
+
+            objeto.addEventListener("focus", ()=>{
+                console.log("hice focus");
+            })
+            objeto.addEventListener("blur", hiceClick)
+
+            
+
+        </script>
+    </body>
+</html>
