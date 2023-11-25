@@ -7,7 +7,7 @@ repo para las clases de javascript
 - Google Chrome
 - VisualStudio Code
 
-#Subir cambios de forma rapida
+# Subir cambios de forma rapida
 Ejecutar el scirpt bash: 
 
 chmod +x subir-git.sh 
